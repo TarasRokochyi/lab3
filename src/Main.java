@@ -28,7 +28,10 @@ public class Main {
                     System.out.println("Go or q");
                     text = scan.nextLine();
                     if (text.equals("go")) {
-
+                        int numb = Integer.parseInt(scan.nextLine());
+                        for (int i = 1; i < 10;i++){
+                            System.out.println(i+" x "+numb+" = "+(i * numb));
+                        }
                     }
                     else if (text.equals("q")) {
                         break;
