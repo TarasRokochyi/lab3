@@ -43,7 +43,22 @@ public class Main {
                     System.out.println("Go or q");
                     text = scan.nextLine();
                     if (text.equals("go")) {
-
+                        int a = Integer.parseInt(scan.nextLine());
+                        int b = Integer.parseInt(scan.nextLine());
+                        int h = Integer.parseInt(scan.nextLine());
+                        int amount = 0;
+                        int sum = 0;
+                        int o = h;
+                        for (int i = a;i <= b;i++){
+                            if (o == h) {
+                                sum = sum + i;
+                                o = 0;
+                                amount =amount + 1;
+                                continue;
+                            }
+                            o++;
+                        }
+                        System.out.println("Average is: "+(sum/amount));
                     }
                     else if (text.equals("q")) {
                         break;
