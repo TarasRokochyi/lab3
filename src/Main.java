@@ -70,7 +70,13 @@ public class Main {
                     System.out.println("Go or q");
                     text = scan.nextLine();
                     if (text.equals("go")) {
-
+                        int x = Integer.parseInt(scan.nextLine());
+                        int y = Integer.parseInt(scan.nextLine());
+                        int product = 0;
+                        for (int i = 0; i < x; i++){
+                            product = product + y;
+                        }
+                        System.out.println("Product is: "+product);
                     }
                     else if (text.equals("q")) {
                         break;
