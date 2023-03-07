@@ -105,7 +105,25 @@ public class Main {
                     System.out.println("Go or q");
                     text = scan.nextLine();
                     if (text.equals("go")) {
-
+                        int a = Integer.parseInt(scan.nextLine());
+                        int b = Integer.parseInt(scan.nextLine());
+                        if (a > b){
+                            int n = a;
+                            a = b;
+                            b = n;
+                        }
+                        System.out.println("Всі числа кратні 3 і не кратні 5: ");
+                        for(int i = a; i <= b; i++){
+                            if ((i % 3 == 0) && (i % 5 != 0)){
+                                System.out.println(i);
+                            }
+                        }
+                        System.out.println("Всі числа які є квадратами парних чисел: ");
+                        for (int i = a; i <= b; i++){
+                            if (Math.sqrt(i) % 2 == 0){
+                                System.out.println(i);
+                            }
+                        }
                     }
                     else if (text.equals("q")) {
                         break;
