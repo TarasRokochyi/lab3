@@ -130,6 +130,26 @@ public class Main {
                     }
                 }
             }
+            else if(text.equals("7")){
+                while(true){
+                    System.out.println("Go or q");
+                    text = scan.nextLine();
+                    if (text.equals("go")) {
+                        int n = Integer.parseInt(scan.nextLine());
+                        int sum = 0;
+                        int i, j = 0;
+                        for (int m = 1; m <= n; m++){
+                            i = m;
+                            j = m;
+                            sum += (1 + i + j);
+                        }
+                        System.out.println(sum);
+                    }
+                    else if (text.equals("q")){
+                        break;
+                    }
+                }
+            }
             else if(text.equals("q")){
                 break;
             }
