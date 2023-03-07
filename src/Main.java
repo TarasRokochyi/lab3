@@ -88,7 +88,12 @@ public class Main {
                     System.out.println("Go or q");
                     text = scan.nextLine();
                     if (text.equals("go")) {
-
+                        int number = Integer.parseInt(scan.nextLine());
+                        int result = 0;
+                        for(int n = 1; n <= number; n++){
+                            result += (2*n)-1;
+                        }
+                        System.out.println(result);
                     }
                     else if (text.equals("q")) {
                         break;
